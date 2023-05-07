@@ -1,27 +1,38 @@
 {
   "name": "jobtrax",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "description": "-   - Developed by: Dylan Szalankiewicz",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/djszal/JobTrax.git"
   },
-  "author": "Dylan Szalankiewicz szalank.dj@gmail.com",
+  "author": "Dylan Szalankiewicz szalank.dj@gmail.comn",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/djszal/JobTrax/issues"
   },
   "homepage": "https://github.com/djszal/JobTrax#readme",
   "dependencies": {
-    "axios": "^1.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router": "^6.11.1",
     "react-router-dom": "^6.11.1",
     "react-scripts": "^5.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
