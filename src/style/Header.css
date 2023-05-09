@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    background-color: navy;
+    /* color: white; */
+}
+
+.nav-links{
+    display: flex;
+    
+}
+
+.header-links{
+    margin-right: 30px;
+    color: white;
+}
+
+.links:hover {
+    color: #fb8500;
+    text-decoration: none;
+}
+
+
+

@@ -90,12 +90,12 @@ const Estimate = () => {
             <label className='estimate-column-labels'>Total Cost</label>
             <input></input>
             </div> 
+
+        </form>
             <div className='project-total'>
               <h3>PROJECT TOTAL</h3>
               <p>$$$</p>
             </div>
-
-        </form>
       </div>
     )
 }
