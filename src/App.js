@@ -4,13 +4,12 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
       <div className='header'>
         <div className='app-title'>JobTrax</div>
 
         <div className='nav-links'>
           <div className='links'>Estimate</div>
-          <div className='links'>Accounting</div>
+          <div className='links'>Job Costing</div>
           <div className='links'>Project Management</div>
           <div className='links'>CRM</div>
           <div className='links'>Login/Register</div>
@@ -44,7 +43,7 @@ function App() {
 
         <form className='estimate-form'>
           <div className='category'>
-            <label>Category</label>
+            <label className='estimate-column-labels'>Category</label>
             <select name='category' className='category'>
               <option value="Building Permit">General Conditions</option>
               <option value="Site Work">Site Work</option>
@@ -53,7 +52,7 @@ function App() {
             </select>
             </div> 
           <div className='subcategory'>
-            <label>Subcategory</label>
+            <label className='estimate-column-labels'>Subcategory</label>
             <select name='subcategory' className='subcategory'>
               <option value="Building Permit">Building Permit</option>
               <option value="Site Work">Site Work</option>
@@ -61,87 +60,52 @@ function App() {
               <option value="Carpentry">Carpentry</option>
             </select>
             </div> 
+          <div className='Item Name'>
+            <label className='estimate-column-labels'>Item Name</label>
+            <input></input>
+            </div> 
           <div className='category'>
-            <label>Category</label>
+            <label className='estimate-column-labels'>Quanitity</label>
+            <input></input>
+            </div> 
+          <div className='category'>
+            <label className='estimate-column-labels'>Unit of Measure</label>
             <select name='category' className='category'>
-              <option value="Building Permit">Building Permit</option>
-              <option value="Site Work">Site Work</option>
-              <option value="General Conditions">General Conditions</option>
-              <option value="Carpentry">Carpentry</option>
+              <option value="Building Permit">EA</option>
+              <option value="Site Work">LF</option>
+              <option value="General Conditions">SF</option>
+              <option value="Carpentry">LS</option>
+              <option value="Carpentry">Allow</option>
             </select>
             </div> 
           <div className='category'>
-            <label>Category</label>
-            <select name='category' className='category'>
-              <option value="Building Permit">Building Permit</option>
-              <option value="Site Work">Site Work</option>
-              <option value="General Conditions">General Conditions</option>
-              <option value="Carpentry">Carpentry</option>
-            </select>
+            <label className='estimate-column-labels'>Unit Cost</label>
+            <input></input>
             </div> 
           <div className='category'>
-            <label>Category</label>
-            <select name='category' className='category'>
-              <option value="Building Permit">Building Permit</option>
-              <option value="Site Work">Site Work</option>
-              <option value="General Conditions">General Conditions</option>
-              <option value="Carpentry">Carpentry</option>
-            </select>
+            <label className='estimate-column-labels'>Base Cost</label>
+            <input></input>
             </div> 
           <div className='category'>
-            <label>Category</label>
-            <select name='category' className='category'>
-              <option value="Building Permit">Building Permit</option>
-              <option value="Site Work">Site Work</option>
-              <option value="General Conditions">General Conditions</option>
-              <option value="Carpentry">Carpentry</option>
-            </select>
+            <label className='estimate-column-labels'>Markup %</label>
+            <input></input>
             </div> 
           <div className='category'>
-            <label>Category</label>
-            <select name='category' className='category'>
-              <option value="Building Permit">Building Permit</option>
-              <option value="Site Work">Site Work</option>
-              <option value="General Conditions">General Conditions</option>
-              <option value="Carpentry">Carpentry</option>
-            </select>
+            <label className='estimate-column-labels'>Profit Amt</label>
+            <input></input>
             </div> 
           <div className='category'>
-            <label>Category</label>
-            <select name='category' className='category'>
-              <option value="Building Permit">Building Permit</option>
-              <option value="Site Work">Site Work</option>
-              <option value="General Conditions">General Conditions</option>
-              <option value="Carpentry">Carpentry</option>
-            </select>
+            <label className='estimate-column-labels'>Profit Margin</label>
+            <input></input>
             </div> 
           <div className='category'>
-            <label>Category</label>
-            <select name='category' className='category'>
-              <option value="Building Permit">Building Permit</option>
-              <option value="Site Work">Site Work</option>
-              <option value="General Conditions">General Conditions</option>
-              <option value="Carpentry">Carpentry</option>
-            </select>
+            <label className='estimate-column-labels'>Total Cost</label>
+            <input></input>
             </div> 
-          <div className='category'>
-            <label>Category</label>
-            <select name='category' className='category'>
-              <option value="Building Permit">Building Permit</option>
-              <option value="Site Work">Site Work</option>
-              <option value="General Conditions">General Conditions</option>
-              <option value="Carpentry">Carpentry</option>
-            </select>
-            </div> 
-          <div className='category'>
-            <label>Category</label>
-            <select name='category' className='category'>
-              <option value="Building Permit">Building Permit</option>
-              <option value="Site Work">Site Work</option>
-              <option value="General Conditions">General Conditions</option>
-              <option value="Carpentry">Carpentry</option>
-            </select>
-            </div> 
+            <div className='project-total'>
+              <h3>PROJECT TOTAL</h3>
+              <p>$$$</p>
+            </div>
 
         </form>
       </div>
