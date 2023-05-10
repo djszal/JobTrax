@@ -1,4 +1,5 @@
 import React from "react";
+import EstimateRow from "./EstimateRow";
 
 
 const Estimate = () => {
@@ -26,72 +27,25 @@ const Estimate = () => {
             </div>
           </div>
         </div>
+            <div className="estimate-column-names">
+                <h3>Category</h3>
+                <h3>Subcategory</h3>
+                <h3>Item Name</h3>
+                <h3>Quanitity</h3>
+                <h3>Unit of Measure</h3>
+                <h3>Unit Cost</h3>
+                <h3>Base Cost</h3>
+                <h3>Markup %</h3>
+                <h3>Profit Amt</h3>
+                <h3>Profit Margin</h3>
+                <h3>Total Cost</h3>
+            </div>
+            <EstimateRow />
+            <EstimateRow />
+            <EstimateRow />
+            <button type="Submit">Add Row</button>
+            <button type="Submit">Delete Row</button>
 
-        <form className='estimate-form'>
-          <div className='category'>
-            <label className='estimate-column-labels'>Category</label>
-            <select name='category' className='category'>
-              <option value="Building Permit">General Conditions</option>
-              <option value="Site Work">Site Work</option>
-              <option value="General Conditions">Concrete</option>
-              <option value="Carpentry">Carpentry</option>
-            </select>
-            </div> 
-          <div className='subcategory'>
-            <label className='estimate-column-labels'>Subcategory</label>
-            <select name='subcategory' className='subcategory'>
-              <option value="Building Permit"></option>
-              <option value="Building Permit">Building Permit</option>
-              <option value="Site Work">Site Work</option>
-              <option value="General Conditions">General Conditions</option>
-              <option value="Carpentry">Carpentry</option>
-            </select>
-            </div> 
-          <div className='Item Name'>
-            <label className='estimate-column-labels'>Item Name</label>
-            <input></input>
-            </div> 
-          <div className='category'>
-            <label className='estimate-column-labels'>Quanitity</label>
-            <input></input>
-            </div> 
-          <div className='category'>
-            <label className='estimate-column-labels'>Unit of Measure</label>
-            <select name='category' className='category'>
-              <option value="Building Permit"></option>
-              <option value="Building Permit">EA</option>
-              <option value="Site Work">LF</option>
-              <option value="General Conditions">SF</option>
-              <option value="Carpentry">LS</option>
-              <option value="Carpentry">Allow</option>
-            </select>
-            </div> 
-          <div className='category'>
-            <label className='estimate-column-labels'>Unit Cost</label>
-            <input></input>
-            </div> 
-          <div className='category'>
-            <label className='estimate-column-labels'>Base Cost</label>
-            <input></input>
-            </div> 
-          <div className='category'>
-            <label className='estimate-column-labels'>Markup %</label>
-            <input></input>
-            </div> 
-          <div className='category'>
-            <label className='estimate-column-labels'>Profit Amt</label>
-            <input></input>
-            </div> 
-          <div className='category'>
-            <label className='estimate-column-labels'>Profit Margin</label>
-            <input></input>
-            </div> 
-          <div className='category'>
-            <label className='estimate-column-labels'>Total Cost</label>
-            <input></input>
-            </div> 
-
-        </form>
             <div className='project-total'>
               <h3>PROJECT TOTAL</h3>
               <p>$$$</p>

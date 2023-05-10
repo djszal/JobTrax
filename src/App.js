@@ -3,6 +3,7 @@ import './style/App.css';
 import Header from './components/Header';
 import { Route, Routes } from 'react-router';
 import Estimate from './components/Estimate';
+import Home from './components/Home';
 
 function App() {
   return (
@@ -11,6 +12,10 @@ function App() {
 
       <div>
         <Routes>
+          <Route 
+            exact path="/"
+            element={<Home />}
+            ></Route>
           <Route 
             path="/estimate"
             element={<Estimate />}

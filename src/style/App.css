@@ -1,8 +1,12 @@
-.estimate-form{
+.estimate-row{
   display: grid;
   grid-template-columns: 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px;
 }
+.estimate-column-names{
+  display: grid;
+  grid-template-columns: 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px;
 
+}
 .totals-sub-box{
   display: grid;
   grid-template-columns: 150px 150px 150px 150px
