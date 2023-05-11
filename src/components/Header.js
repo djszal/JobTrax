@@ -12,8 +12,8 @@ const Header = () => {
           <div className='links'><Link to={"/"} className="header-links">Job Costing</Link></div>
           <div className='links'><Link to={"/"} className="header-links">Project Management</Link></div>
           <div className='links'><Link to={"/"} className="header-links">CRM</Link></div>
-          <div className='links'><Link to={"/"} className="header-links">Login</Link></div>
-          
+          <button type="Submit">Demo</button>          
+          <button type="Submit">Login</button>          
         </div>
       </div>
     )
