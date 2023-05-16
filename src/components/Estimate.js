@@ -43,7 +43,17 @@ const Estimate = () => {
             <EstimateRow />
             <EstimateRow />
             <EstimateRow />
-            <button type="Submit">Add Row</button>
+            <button 
+            type="Submit"
+            className="submit-activity"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        console.log("Hello");
+                        <EstimateRow />;
+                      }}
+                      >
+                        Add Row
+                        </button>
             <button type="Submit">Delete Row</button>
 
             <div className='project-total'>
