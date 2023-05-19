@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import EstimateRow from "./EstimateRow";
 
 
@@ -43,13 +43,11 @@ const Estimate = () => {
             <EstimateRow />
             <EstimateRow />
             <EstimateRow />
+            <EstimateRow />
             <button 
-            type="Submit"
-            className="submit-activity"
+            className="button"
                       onClick={(e) => {
-                        e.preventDefault();
-                        console.log("Hello");
-                        <EstimateRow />;
+                          <EstimateRow />;
                       }}
                       >
                         Add Row

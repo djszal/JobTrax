@@ -1,3 +1,5 @@
+
+
 .estimate-row{
   display: grid;
   grid-template-columns: 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px;
@@ -13,8 +15,9 @@
 }
 
 .project-running-totals-box{
-  display: block;
+  display: flex;
   border: 5px black solid;
-  width: 50%;
-  /* float: right; */
+  
+  flex-direction: column;
+  align-items: flex-end;
 }
