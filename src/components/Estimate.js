@@ -3,6 +3,14 @@ import EstimateRow from "./EstimateRow";
 
 
 const Estimate = () => {
+
+  const [rows, setRows] = useState([]);
+  console.log(rows)
+
+const handleAddRow= () => {
+  return <EstimateRow />
+}
+  
     return(
         <div className='estimate'>
           <div className='Logo'></div>
@@ -40,18 +48,26 @@ const Estimate = () => {
                 <h3>Profit Margin</h3>
                 <h3>Total Cost</h3>
             </div>
-            <EstimateRow />
-            <EstimateRow />
-            <EstimateRow />
-            <EstimateRow />
-            <button 
-            className="button"
-                      onClick={(e) => {
-                          <EstimateRow />;
-                      }}
-                      >
-                        Add Row
-                        </button>
+            <div>
+            <EstimateRow/>
+            <EstimateRow/>
+            <EstimateRow/>
+
+            {/* {rows.map((row)=>{
+              <EstimateRow row={row} />
+            })} */}
+
+            </div>
+            
+            <div>
+      
+      <button 
+      className="button" 
+      onClick={()=>handleAddRow}>
+        Add Row
+      </button>
+    </div>
+
             <button type="Submit">Delete Row</button>
 
             <div className='project-total'>
