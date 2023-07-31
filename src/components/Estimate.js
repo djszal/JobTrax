@@ -10,6 +10,10 @@ const Estimate = () => {
 const handleAddRow= () => {
   return <EstimateRow />
 }
+
+const handleAddSOW = () => {
+  return true
+}
   
     return(
         <div className='estimate'>
@@ -42,12 +46,9 @@ const handleAddRow= () => {
                 <h3>Quanitity</h3>
                 <h3>Unit of Measure</h3>
                 <h3>Unit Cost</h3>
-                <h3>Base Cost</h3>
-                <h3>Markup %</h3>
-                <h3>Profit Amt</h3>
-                <h3>Profit Margin</h3>
                 <h3>Total Cost</h3>
             </div>
+            
             <div>
             <EstimateRow/>
             <EstimateRow/>
@@ -60,15 +61,22 @@ const handleAddRow= () => {
             </div>
             
             <div>
-      
-      <button 
-      className="button" 
-      onClick={()=>handleAddRow}>
-        Add Row
-      </button>
-    </div>
+              <button 
+                className="button" 
+                onClick={()=>handleAddRow}>
+                Add Row
+              </button>
+            </div>
 
             <button type="Submit">Delete Row</button>
+            
+            <div>
+              <button 
+                className="button" 
+                onClick={()=>handleAddSOW}>
+                Add Scope Of Work
+              </button>
+            </div>
 
             <div className='project-total'>
               <h3>PROJECT TOTAL</h3>

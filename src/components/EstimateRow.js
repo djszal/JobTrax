@@ -33,12 +33,11 @@ const EstimateRow = () => {
         <div className='category'>
           <label className='estimate-column-labels'></label>
           <select name='category' className='category'>
-            <option value="Building Permit"></option>
-            <option value="Building Permit">EA</option>
-            <option value="Site Work">LF</option>
-            <option value="General Conditions">SF</option>
-            <option value="Carpentry">LS</option>
-            <option value="Carpentry">Allow</option>
+            <option value="Each">EA</option>
+            <option value="Linear Foot">LF</option>
+            <option value="Square Foot">SF</option>
+            <option value="Lump Sum">LS</option>
+            <option value="Allowance">Allow</option>
           </select>
           </div> 
         <div className='category'>
@@ -49,22 +48,7 @@ const EstimateRow = () => {
           <label className='estimate-column-labels'></label>
           <input></input>
           </div> 
-        <div className='category'>
-          <label className='estimate-column-labels'></label>
-          <input></input>
-          </div> 
-        <div className='category'>
-          <label className='estimate-column-labels'></label>
-          <input></input>
-          </div> 
-        <div className='category'>
-          <label className='estimate-column-labels'></label>
-          <input></input>
-          </div> 
-        <div className='category'>
-          <label className='estimate-column-labels'></label>
-          <input></input>
-          </div> 
+        
 
       </form>
     )
